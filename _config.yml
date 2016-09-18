@@ -21,3 +21,8 @@ defaults:
   values:
     layout: page
 permalink: pretty
+github:
+  access_token: 00a4974e00be6faadf68321f933cff34a932bb99
+  path: EmmaCodes/bastille
+  branch: master
+  format: compiled
