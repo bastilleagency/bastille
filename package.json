@@ -1,0 +1,42 @@
+{
+  "name": "bastille",
+  "version": "0.0.0",
+  "description": "Website for Bastille Agency",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/EmmaCodes/bastille.git"
+  },
+  "author": "Einar and Emma",
+  "bugs": {
+    "url": "https://github.com/EmmaCodes/bastille/issues"
+  },
+  "homepage": "https://github.com/EmmaCodes/bastille",
+  "devDependencies": {
+    "autoprefixer": "^6.4.0",
+    "browserify": "^13.1.0",
+    "css-mqpacker": "^5.0.1",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-gzip": "^1.4.0",
+    "gulp-inject": "^4.1.0",
+    "gulp-s3": "^0.3.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-stylus": "^2.5.0",
+    "gulp-uglify": "^2.0.0",
+    "gulp-util": "^3.0.7",
+    "gulp-watch": "^4.3.9",
+    "lodash": "^4.15.0",
+    "nib": "^1.1.0",
+    "poststylus": "^0.2.3",
+    "rupture": "^0.6.1",
+    "s-grid": "^1.2.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "vue": "^1.0.26",
+    "vue-resource": "^0.9.3",
+    "vueify": "^8.7.0"
+  },
+  "dependencies": {
+    "bluebird": "^3.4.1"
+  }
+}
