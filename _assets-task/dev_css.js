@@ -13,7 +13,7 @@ var sGrid        = require('s-grid');
 
 module.exports = {
   build: function() {
-    return gulp.src("assets/stylus/main.styl")
+    return gulp.src("_assets/stylus/main.styl")
       .pipe(sourcemaps.init())
       .pipe(stylus({
         define: {'static': '/static/'},
@@ -30,6 +30,6 @@ module.exports = {
       .on('error', gutil.log)
       .pipe(concat("main.css"))
       .pipe(sourcemaps.write("."))
-      .pipe(gulp.dest("static/css"));
+      .pipe(gulp.dest("css"));
   }
 }

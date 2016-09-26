@@ -1,4 +1,24 @@
 .hero
-  background url('/images/hero.png') no-repeat center center
+  background url('/images/hero.jpg') no-repeat center center
   background-size cover
   height 100vh
+
+  &__inner
+    height 100%
+    center($containerWidth)
+    grid('row','center','end')
+
+  &__content
+    cell(1,2)
+
+  &__heading
+    font-size rem-calc(78)
+    margin-bottom rem-calc(10)
+    font-weight bold
+    em
+      color $blue
+
+  &__subheading
+    font-size rem-calc(18)
+    line-height 1.6
+    width 75%

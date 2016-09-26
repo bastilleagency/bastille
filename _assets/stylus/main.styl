@@ -1,0 +1,23 @@
+flex-version    = flex
+support-for-ie  = false
+vendor-prefixes = official
+@import "nib"
+
+@import "rupture"
+@import 's-grid-settings'
+@import 's-grid-functions'
+
+$sectionPadding   = rem-calc(140px) 0
+$containerWidth   = rem-calc(1440px)
+$containerPadding = rem-calc(20px)
+
+global-reset()
+
+@import "variables/colors"
+@import "variables/typography"
+
+@import "common/global"
+
+@import "partials/hero"
+@import "partials/header"
+@import "partials/logo"

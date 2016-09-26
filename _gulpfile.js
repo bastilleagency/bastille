@@ -1,9 +1,9 @@
 var gulp     = require('gulp');
 var watch    = require('gulp-watch');
-var dev_css  = require('./tasks/dev_css.js');
-var dev_js   = require('./tasks/dev_js.js');
-var prod_css = require('./tasks/prod_css.js');
-var prod_js  = require('./tasks/prod_js.js');
+var dev_css  = require('./_assets-task/dev_css.js');
+var dev_js   = require('./_assets-task/dev_js.js');
+var prod_css = require('./_assets-task/prod_css.js');
+var prod_js  = require('./_assets-task/prod_js.js');
 
 /**
  * Default tasks
@@ -18,8 +18,8 @@ gulp.task('prod:css', ['prod:css:build', 'prod:css:s3', 'prod:css:inject']);
  * Watch task
  */
 gulp.task("watch", function() {
-  gulp.watch("./assets/js/**/*.js", ["dev:js:build"]);
-  gulp.watch("./assets/stylus/**/*.styl", ["dev:css:build"]);
+  gulp.watch("./_assets/js/**/*.js", ["dev:js:build"]);
+  gulp.watch("./_assets/stylus/**/*.styl", ["dev:css:build"]);
 });
 
 /**
