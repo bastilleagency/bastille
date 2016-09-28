@@ -1,6 +1,7 @@
 ---
 title: Client
 date: 2016-09-28 00:37:00 Z
+layout: client
 ---
 
 Getting talented people to join your company is not easy, but it’s important. If you have run out of “friends” to recruit, have not seen much success in your job postings, or have had enough with agency recruiter noise, we should talk.

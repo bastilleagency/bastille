@@ -28,3 +28,5 @@ github:
   path: EmmaCodes/bastille
   branch: master
   format: compiled
+simple_form:
+  api_token: 846ff3e383b92fd41e25d869b9e1961f
