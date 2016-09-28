@@ -21,6 +21,7 @@ defaults:
   values:
     layout: page
 permalink: pretty
+exclude: ["node_modules"]
 github:
   access_token: 00a4974e00be6faadf68321f933cff34a932bb99
   path: EmmaCodes/bastille
