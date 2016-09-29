@@ -2,7 +2,7 @@
   <div class="header__inner">
     {% include logo.html %}
     <div class="hamburger__wrapper">
-      <a href="#" class="hamburger">
+      <a href="#" class="hamburger" id="hamburger" v-on:click.prevent="toggle">
         <img src="/images/hamburger.svg" class="svg" alt="" />
       </a>
     </div>

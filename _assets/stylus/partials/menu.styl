@@ -1,0 +1,32 @@
+.menu
+  absolute right 0 top rem-calc(30px)
+  padding rem-calc(30px)
+  background $white
+  opacity 0
+  z-index 0
+  transform scaleY(.7)
+  border-radius 4px
+
+  &__list
+    grid()
+
+  &__item
+    cell(1,2)
+    padding 0 rem-calc(30px)
+    min-width rem-calc(200px)
+
+  &__sub-item
+    a
+      font-size rem-calc(14px)
+      color $gray
+      display inline-block
+      margin-bottom 4px
+      &:hover
+        color $blue
+
+  &__heading
+    color $black
+    display block
+    font-size rem-calc(22px)
+    font-weight 600
+    margin-bottom rem-calc(16px)
