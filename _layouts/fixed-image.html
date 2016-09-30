@@ -1,0 +1,39 @@
+---
+title: Bastille Agency
+layout: fixed-image
+---
+
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <style media="screen">
+    .{{layout.layout}}__left {
+      background-image: url('{{ meta.image | default: '/images/hero2.jpg' }}');
+    }
+  </style>
+
+  <body class="{{ layout.layout }}">
+
+    <section class="{{ layout.layout }}__left">
+      <h1 class="{{layout.layout}}__title">
+        {{ meta.title | default: 'About' }}
+      </h1>
+    </section>
+
+    <section class="{{ layout.layout }}__right">
+      <article class="{{ layout.layout }}__content">
+        <h2 class="{{ layout.layout }}__heading">{{ meta.heading | default: 'All the hustle of an agency.' }}</h2>
+        <h3 class="{{ layout.layout }}__sub-heading">{{ meta.sub-heading | default: 'None of the sleaze.' }}</h3>
+        <div class="{{ layout.layout }}__body">
+          {{ content }}
+        </div>
+      </article>
+    </section>
+
+    {% include footer_scripts.html %}
+
+  </body>
+
+</html>

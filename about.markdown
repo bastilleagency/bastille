@@ -1,7 +1,7 @@
 ---
 title: About
 date: 2016-09-28 00:39:00 Z
-layout: about
+layout: fixed-image
 ---
 
 Done right, recruiting is one of the most rewarding professions. Rarely do you have the chance to affect somebody’s life in the way that you can when you help them find a new job.

@@ -8,10 +8,23 @@ layout: about
 
   {% include head.html %}
 
-  <body>
+  <body class="{{ layout.layout }}">
 
-    <h1>All the hustle of an agency.</h1>
-    <h1>None of the sleaze.</h1>
+
+    {% include header.html %}
+
+    <section>
+
+
+    </section>
+
+    <section>
+      <h2 class="heading">All the hustle of an agency.</h2>
+      <h3 class="sub-heading">None of the sleaze.</h3>
+    </section>
+
+
+
 
     {{ content }}
 
