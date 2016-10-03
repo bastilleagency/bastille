@@ -303,8 +303,8 @@ body {
   height: 100%;
 }
 .fixed-image__left {
-  -ms-flex-preferred-size: calc(100% * 0.333333333333333 - 0rem);
-      flex-basis: calc(100% * 0.333333333333333 - 0rem);
+  -ms-flex-preferred-size: calc(100% * 0.4 - 0rem);
+      flex-basis: calc(100% * 0.4 - 0rem);
   min-width: 0;
   height: 100vh;
   overflow: hidden;
@@ -316,8 +316,8 @@ body {
           animation: fixed-image__left 1600ms ease-out forwards;
 }
 .fixed-image__right {
-  -ms-flex-preferred-size: calc(100% * 0.666666666666667 - 0rem);
-      flex-basis: calc(100% * 0.666666666666667 - 0rem);
+  -ms-flex-preferred-size: calc(100% * 0.6 - 0rem);
+      flex-basis: calc(100% * 0.6 - 0rem);
   min-width: 0;
   overflow-x: hidden;
   overflow-y: scroll;
