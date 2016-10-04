@@ -19,14 +19,14 @@ layout: fixed-image
 
     <section class="{{ layout.layout }}__left">
       <h1 class="{{layout.layout}}__title">
-        {{ meta.title | default: 'About' }}
+        {{ page.title | default: 'Bastille Agency' }}
       </h1>
     </section>
 
     <section class="{{ layout.layout }}__right">
       <article class="{{ layout.layout }}__content">
-        <h2 class="{{ layout.layout }}__heading">{{ meta.heading | default: 'All the hustle of an agency.' }}</h2>
-        <h3 class="{{ layout.layout }}__sub-heading">{{ meta.sub-heading | default: 'None of the sleaze.' }}</h3>
+        <h2 class="{{ layout.layout }}__heading">{{ page['heading'] | default: 'Bastille' }}</h2>
+        <h3 class="{{ layout.layout }}__subheading">{{ page['subheading'] | default: 'Go beyond the resume.' }}</h3>
         <div class="{{ layout.layout }}__body">
           {{ content }}
         </div>

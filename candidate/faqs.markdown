@@ -1,6 +1,7 @@
 ---
 title: Candidate FAQs
 date: 2016-10-04 01:21:00 Z
+layout: faqs
 FAQs:
 - question: How does this work?
   answer: You take the assessment.  We grade it and give you “code review” type feedback.  We
@@ -8,7 +9,7 @@ FAQs:
     seen it.  And it’s off to the races!
 - question: What is the format of the assessment?
   answer: 'Using the context of a real world example of a service, the format consists
-    of asking you to implement three features of said service.  '
+    of asking you to implement three features of said service.'
 - question: Why do the assessment?
   answer: We firmly believe the assessment gives us a good window into your technical
     ability.  This is really powerful as it allows us to find the right role(s) that

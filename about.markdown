@@ -2,7 +2,7 @@
 title: About
 date: 2016-09-28 00:39:00 Z
 heading: All the hustle of an agency.
-sub-heading: None of the sleaze.
+subheading: None of the sleaze.
 layout: fixed-image
 ---
 
