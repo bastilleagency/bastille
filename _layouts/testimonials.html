@@ -1,0 +1,22 @@
+---
+title: Bastille Agency
+layout: testimonials
+---
+
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="{{ layout.layout }}">
+
+	{% for testimonial in page.testimonials %}
+      <h2>{{ testimonial.quote }}</h2>
+      <h3>{{ testimonial.source }}</h3>
+    {% endfor %}
+
+    {% include footer_scripts.html %}
+
+  </body>
+
+</html>

@@ -1,0 +1,13 @@
+<form action="https://getsimpleform.com/messages?form_api_token={{ site.simple_form.api_token }}" method="post">
+  <!-- the redirect_to is optional, the form will redirect to the referrer on submission -->
+  <!-- TODO: create thank you page? -->
+  <input type='hidden' name='redirect_to' value='http://{{ site.url }}' />
+
+
+  <!-- all your input fields here.... -->
+  {% for field in page.form %}
+    {{ field.label }}: <input type='{{ field.type }}' name='{{ field.label }}' />
+  {% endfor %}
+
+  <input type='submit' value='Submit' />
+</form>
