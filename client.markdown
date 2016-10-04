@@ -1,6 +1,7 @@
 ---
 title: Client
 date: 2016-09-28 00:37:00 Z
+heading: Identify awesome developers before investing time in interviews.
 layout: client
 ---
 
