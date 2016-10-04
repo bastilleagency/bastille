@@ -11,7 +11,7 @@ var hamburger = {
       if(!this.isAnimating){
         this.animateButton();
         this.isOpen = !this.isOpen;
-        menu.toggleMenu(this.isOpen);
+        window.menu.toggleMenu(this.isOpen);
       }
     },
     animateButton: function(){

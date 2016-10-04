@@ -21,7 +21,7 @@ var menu = {
       }
     }
   },
-}
+};
 
 
 module.exports = menu;
