@@ -429,15 +429,5 @@ body {
             transform: translateY(0);
   }
 }
-.subsection-landing {
-  background-image: url("/images/client-hero.jpg");
-}
-.subsection-landing__top {
-  background-image: url("/images/client-hero.jpg");
-  background-repeat: no-repeat;
-  background-position: 86% center;
-  position: relative;
-  background-size: cover;
-}
 
 /*# sourceMappingURL=main.css.map */
