@@ -4,17 +4,17 @@ date: 2016-09-28 00:37:00 Z
 heading: Show off your coding skills beyond your resume.
 form:
 - label: First Name
-  input type: text
+  type: text
 - label: Last Name
-  input type: text
+  type: text
 - label: Email
-  input type: text
+  type: text
 - label: Phone Number
-  input type: text
+  type: text
 - label: LinkedIn
-  input type: text
+  type: text
 - label: Resume
-  input type: file
+  type: file
 layout: candidate
 ---
 
