@@ -28,8 +28,8 @@ permalink: pretty
 exclude:
 - node_modules
 github:
-  access_token: 00a4974e00be6faadf68321f933cff34a932bb99
-  path: EmmaCodes/bastille
+  access_token: 7681ed28eb73b6279d73631e9c669e2d98d1309f
+  path: bastilleagency/bastille
   branch: master
   format: compiled
 simple_form:
