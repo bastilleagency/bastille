@@ -322,6 +322,7 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   height: 100vh;
+  padding-bottom: 6.25rem;
 }
 .fixed-image__title {
   position: absolute;
