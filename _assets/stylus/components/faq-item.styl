@@ -1,0 +1,18 @@
+.faq-item
+  margin 20px
+  border-radius 5px
+  box-shadow 4px 4px 0px rgba(0,0,0,.15)
+  &__question
+    padding 20px
+    display block
+    cursor pointer
+    &:after
+      content " 🔽"
+      .faq-item--is-active &
+        content " ╳"
+  &__answer
+    padding 0 20px 20px
+    font-style italic
+    display none
+    .faq-item--is-active &
+      display block

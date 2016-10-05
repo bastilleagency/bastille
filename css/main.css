@@ -287,6 +287,30 @@ body {
   font-weight: 600;
   margin-bottom: 1rem;
 }
+.faq-item {
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 0px rgba(0,0,0,0.15);
+}
+.faq-item__question {
+  padding: 20px;
+  display: block;
+  cursor: pointer;
+}
+.faq-item__question:after {
+  content: " 🔽";
+}
+.faq-item--is-active .faq-item__question:after {
+  content: " ╳";
+}
+.faq-item__answer {
+  padding: 0 20px 20px;
+  font-style: italic;
+  display: none;
+}
+.faq-item--is-active .faq-item__answer {
+  display: block;
+}
 .fixed-image {
   display: -webkit-box;
   display: -ms-flexbox;

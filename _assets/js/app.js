@@ -2,7 +2,8 @@ var svg          = require('inline-svg');
 var Vue          = require('vue');
 var vueElements  = {
   hamburger: require('./hamburger'),
-  menu     : require('./menu')
+  menu     : require('./menu'),
+  faqList  : require('./faqList')
 };
 
 window.bus       = new Vue();

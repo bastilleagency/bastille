@@ -10,11 +10,15 @@ layout: faqs
 
   <body class="{{ layout.layout }}">
 
-
-    {% for faq in page.FAQs %}
-      <h2>{{ faq.question }}</h2>
-      <h3>{{ faq.answer }}</h3>
-    {% endfor %}
+    {% if faq != '' %}
+      <section class="faq-list" id="faqList">
+        {% for faq in page.FAQs %}
+          <faq-item question="{{ faq.question }}">
+            {{ faq.answer }}
+          </faq-item>
+        {% endfor %}
+      </section>
+    {% endif %}
 
     {% include footer_scripts.html %}
 
