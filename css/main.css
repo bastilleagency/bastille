@@ -287,6 +287,13 @@ body {
   font-weight: 600;
   margin-bottom: 1rem;
 }
+.bastille-form .btn {
+  background-color: #fff;
+  color: #0a0b09;
+}
+.bastille-form .btn:hover {
+  background-color: #fff;
+}
 .faq-item {
   margin: 20px;
   border-radius: 5px;
@@ -453,6 +460,9 @@ body {
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
+}
+.subsection-landing .parallax-container {
+  color: #fff;
 }
 
 /*# sourceMappingURL=main.css.map */

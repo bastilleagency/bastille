@@ -8,16 +8,25 @@ layout: candidate
 
   {% include head.html %}
 
-  <body>
+  <body class="subsection-landing">
 
-	<h1>{{ page['heading'] }}</h1>
-
-    {{ content }}
+  <!-- <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center">{{ page['heading'] }}</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">{{ content }}</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="/images/candidate.jpg"></div>
+  </div> -->
 
     {% include form.html %}
 
     {% include footer_scripts.html %}
-
+    <script src="/js/subsection-init.js"></script>
   </body>
 
 </html>
