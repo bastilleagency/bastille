@@ -1,0 +1,29 @@
+.full-width
+  &__hero
+    background-size cover
+    background-repeat no-repeat
+    min-height rem-calc(500)
+    animation full-width__hero 1600ms ease-out forwards
+
+  &__wrapper
+    clearfix()
+    background $white
+    center($sectionWrapperWidth, $containerPadding)
+    transform translateY(-240px)
+    padding-bottom rem-calc(80px)
+
+  &__heading
+    @extend .fixed-image__heading
+    margin rem-calc(80px) 0
+
+  &__body
+    @extend .fixed-image__body
+
+
+@keyframes full-width__hero
+  from
+    opacity 0
+    background-position 50% 46%
+  to
+    opacity 1
+    background-position 50% 50%

@@ -1,0 +1,9 @@
+{% if page.FAQs != '' %}
+  <section class="faq-list" id="faqList">
+    {% for faq in page.FAQs %}
+      <faq-item question="{{ faq.question }}" q-index="{{ forloop.index }}">
+        {{ faq.answer }}
+      </faq-item>
+    {% endfor %}
+  </section>
+{% endif %}

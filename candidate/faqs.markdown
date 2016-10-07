@@ -1,7 +1,7 @@
 ---
 title: Candidate FAQs
 date: 2016-10-04 01:21:00 Z
-layout: faqs
+layout: full-width
 FAQs:
 - question: How does this work?
   answer: You take the assessment.  We grade it and give you “code review” type feedback.  We
@@ -41,4 +41,3 @@ FAQs:
 - question: Who grades the assignment?
   answer: Our technical advisor, Karthik Senthil, currently grades the assessments.
 ---
-

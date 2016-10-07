@@ -1,18 +1,33 @@
 .faq-item
-  margin 20px
-  border-radius 5px
-  box-shadow 4px 4px 0px rgba(0,0,0,.15)
+  clearfix()
+  grid('column')
+  margin rem-calc(8) 0
   &__question
-    padding 20px
     display block
     cursor pointer
-    &:after
-      content " 🔽"
+    font-size rem-calc(20)
+    font-weight 600
+    margin rem-calc(8) 0
+    color $gray
+    &:hover
+      opacity .8
+    &:before
+      content ">"
+      display inline-block
+      margin-right rem-calc(8)
+      color rgba($gray, .3)
+      transition transform 300ms ease-in-out
+      transform rotate(0)
       .faq-item--is-active &
-        content " ╳"
+        transform rotate(90deg)
   &__answer
-    padding 0 20px 20px
-    font-style italic
-    display none
+    font-size rem-calc(16)
+    line-height 1.4
+    opacity 0
+    padding rem-calc(14) 0
+    margin-bottom rem-calc(14)
+    border-bottom 1px solid rgba($gray, .1)
+    transition opacity 300ms ease-in-out
     .faq-item--is-active &
-      display block
+      opacity 1
+      transition opacity 300ms ease-in-out

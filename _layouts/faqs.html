@@ -10,7 +10,7 @@ layout: faqs
 
   <body class="{{ layout.layout }}">
 
-    {% if faq != '' %}
+    {% if page.FAQs != '' %}
       <section class="faq-list" id="faqList">
         {% for faq in page.FAQs %}
           <faq-item question="{{ faq.question }}">

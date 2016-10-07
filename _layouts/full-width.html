@@ -1,0 +1,35 @@
+---
+title: Bastille Agency
+layout: full-width
+---
+
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <style media="screen">
+    .{{layout.layout}}__hero {
+      background-image: url('{{ meta.image | default: '/images/hero3.jpg' }}');
+    }
+  </style>
+
+  <body class="{{ layout.layout }}">
+
+    <section class="{{ layout.layout }}__hero"></section>
+
+    <section class="{{ layout.layout }}__wrapper">
+      <h1 class="{{layout.layout}}__heading">
+        {{ page.title | default: 'Bastille Agency' }}
+      </h1>
+      <div class="{{layout.layout}}__body">
+        {{ content }}
+      </div>
+      {% include faqs.html %}
+    </section>
+
+    {% include footer_scripts.html %}
+
+  </body>
+
+</html>
