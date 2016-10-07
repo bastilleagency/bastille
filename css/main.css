@@ -359,6 +359,32 @@ body {
   -webkit-transition: opacity 300ms ease-in-out;
   transition: opacity 300ms ease-in-out;
 }
+.testimonials__quote {
+  border-left-color: rgba(83,92,75,0.2);
+  font-size: 1rem;
+  line-height: 1.4;
+  position: relative;
+  width: 80%;
+  margin: 1.25rem auto;
+}
+.testimonials__quote:before {
+  font-family: Georgia, 'Times New Roman', serif;
+  content: "“";
+  font-size: 6.125rem;
+  position: absolute;
+  left: -3.75rem;
+  top: 0;
+  color: rgba(83,92,75,0.2);
+}
+.testimonials__source {
+  display: block;
+  font-style: italic;
+  text-align: right;
+  margin-top: 0.875rem;
+}
+.testimonials__source:before {
+  content: "– ";
+}
 .fixed-image {
   display: -webkit-box;
   display: -ms-flexbox;

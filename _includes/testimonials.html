@@ -1,0 +1,12 @@
+{% if page.testimonials != '' %}
+  <section class="testimonials">
+    {% for testimonial in page.testimonials %}
+      <blockquote class="testimonials__quote">
+        {{ testimonial.quote }}
+        <footer class="testimonials__source">
+          {{ testimonial.source }}
+        </footer>
+      </blockquote>
+    {% endfor %}
+  </section>
+{% endif %}

@@ -1,0 +1,21 @@
+.testimonials
+  &__quote
+    border-left-color rgba($gray, .2)
+    font-size rem-calc(16)
+    line-height 1.4
+    position relative
+    width 80%
+    margin rem-calc(20) auto
+    &:before
+      font-family Georgia, 'Times New Roman', serif
+      content "“"
+      font-size rem-calc(98)
+      absolute left rem-calc(-60) top 0
+      color rgba($gray, .2)
+  &__source
+    display block
+    font-style italic
+    text-align right
+    margin-top rem-calc(14)
+    &:before
+      content "– "
