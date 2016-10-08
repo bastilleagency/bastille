@@ -1,10 +1,9 @@
 ---
 title: Client FAQs
 date: 2016-10-04 01:17:00 Z
-layout: faqs
+layout: full-width
 FAQs:
 - question: Who should I contact?
   answer: 'Please reach out to Georges Janin: georges@bastilleagency.com with any
     questions or inquiries'
 ---
-
