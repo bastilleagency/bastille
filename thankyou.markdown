@@ -2,7 +2,9 @@
 title: Thank You!
 date: 2016-10-04 01:55:00 Z
 heading: Thank You!
-subheading: ''
+subheading: 
+Hero Image:
+  path: "/uploads/thankyou.jpeg"
 layout: full-page
 ---
 
