@@ -215,10 +215,15 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 1;
   width: 118px;
   height: 169px;
   background: url("/images/logo.png") no-repeat left top;
   background-size: contain;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
 }
 .hamburger {
   font-size: 0;
@@ -241,10 +246,10 @@ body {
   position: absolute;
   right: 0;
   top: 1.875rem;
-  padding: 1.875rem;
+  padding: 1.25rem;
   background: #fff;
   opacity: 0;
-  z-index: 0;
+  z-index: 1;
   -webkit-transform: scaleY(0.7);
           transform: scaleY(0.7);
   border-radius: 4px;
@@ -264,12 +269,12 @@ body {
           flex-direction: row;
 }
 .menu__item {
-  -ms-flex-preferred-size: calc(100% * 0.5 - 1.25rem);
-      flex-basis: calc(100% * 0.5 - 1.25rem);
+  -ms-flex-preferred-size: calc(100% * 0.333333333333333 - 1.25rem);
+      flex-basis: calc(100% * 0.333333333333333 - 1.25rem);
   min-width: 0;
   margin: 0.625rem;
-  padding: 0 1.875rem;
-  min-width: 12.5rem;
+  padding: 0 0.625rem;
+  min-width: 9.375rem;
 }
 .menu__sub-item a {
   font-size: 0.875rem;

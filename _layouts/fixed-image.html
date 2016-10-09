@@ -10,12 +10,13 @@ layout: fixed-image
 
   <style media="screen">
     .{{layout.layout}}__left {
-      background-image: url('{{ meta.image | default: '/images/hero2.jpg' }}');
+      background-image: url('{{ page["hero image"].path  | default: '/images/hero2.jpg' }}');
     }
   </style>
 
   <body class="{{ layout.layout }}">
 
+    {% include header.html %}
     {% include shared_scripts.html %}
 
     <section class="{{ layout.layout }}__left">

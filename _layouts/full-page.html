@@ -8,6 +8,12 @@ layout: full-page
 
   {% include head.html %}
 
+  <style media="screen">
+    .hero {
+      background-image: url('{{ page["hero image"].path | default: '/images/hero2.jpg' }}');
+    }
+  </style>
+
   <body>
 
     {% include header.html %}

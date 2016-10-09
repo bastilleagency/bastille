@@ -10,7 +10,9 @@ layout: testimonials
 
   <body class="{{ layout.layout }}">
 
-	{% for testimonial in page.testimonials %}
+    {% include header.html %}
+
+	  {% for testimonial in page.testimonials %}
       <h2>{{ testimonial.quote }}</h2>
       <h3>{{ testimonial.source }}</h3>
     {% endfor %}

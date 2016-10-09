@@ -41,4 +41,3 @@ FAQs:
 - question: Who grades the assignment?
   answer: Our technical advisor, Karthik Senthil, currently grades the assessments.
 ---
-
