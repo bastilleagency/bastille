@@ -287,6 +287,15 @@ body {
   font-weight: 600;
   margin-bottom: 1rem;
 }
+.bastille-form {
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+.bastille-form.hide-on-load {
+  display: none;
+}
 .bastille-form .btn {
   background-color: #fff;
   color: #0a0b09;
