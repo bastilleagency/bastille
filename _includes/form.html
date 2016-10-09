@@ -1,11 +1,12 @@
 {% if page.form != '' %}
-<form class="bastille-form col s12 center-align" action="https://getsimpleform.com/messages?form_api_token={{ site.simple_form.api_token }}" method="post">
+<form class="bastille-form col s12" action="https://getsimpleform.com/messages?form_api_token={{ site.simple_form.api_token }}" method="post">
   <input type='hidden' name='redirect_to' value='http://{{ site.url }}' />
 
+  <div class="row">
   {% for field in page.form %}
-    <div class="row">
+
     {% if field.type == 'file' %}
-      <div class="file-field input-field col s6 offset-s3">
+      <div class="file-field input-field col s6">
         <div class="btn">
           <span>{{ field.label }}</span>
           <input type="file">
@@ -15,20 +16,21 @@
         </div>
       </div>
     {% else %}
-      <div class="input-field col s6 offset-s3">
+      <div class="input-field col s6">
         <input id="{{ field.label | downcase | replace: " ", "_" }}" type="{{ field.type }}" class="validate">
         <label for="{{ field.label | downcase | replace: " ", "_" }}">{{ field.label }}</label>
       </div>
     {% endif %}
-    </div>
-  {% endfor %}
 
-  <div class="row">
-    <!-- <button class="btn waves-effect" type="submit" name="Submit">Submit -->
+  {% endfor %}
+  </div>
+
+  <div class="row col s12 center-align">
     <button class="btn waves-effect">Submit
       <i class="material-icons right">send</i>
     </button>
   </div>
+
 </form>
 
 {% include loading.html %}
