@@ -238,14 +238,14 @@ body {
 .hamburger__wrapper {
   position: absolute;
   right: 0;
-  top: 1.875rem;
+  top: -1.25rem;
   width: 4.625rem;
   height: 4.625rem;
 }
 .menu {
   position: absolute;
   right: 0;
-  top: 1.875rem;
+  top: -1.25rem;
   padding: 1.25rem;
   background: #fff;
   opacity: 0;
@@ -274,7 +274,7 @@ body {
   min-width: 0;
   margin: 0.625rem;
   padding: 0 0.625rem;
-  min-width: 9.375rem;
+  min-width: 10.9375rem;
 }
 .menu__sub-item a {
   font-size: 0.875rem;

@@ -1,4 +1,4 @@
-{% if page.testimonials != '' %}
+{% if page.testimonials.size > 0 %}
   <section class="testimonials">
     {% for testimonial in page.testimonials %}
       <blockquote class="testimonials__quote">

@@ -17,7 +17,6 @@ layout: full-width
   <body class="{{ layout.layout }}">
 
     {% include header.html %}
-    {% include shared_scripts.html %}
 
     <section class="{{ layout.layout }}__hero"></section>
 
@@ -28,10 +27,15 @@ layout: full-width
       <div class="{{layout.layout}}__body">
         {{ content }}
       </div>
-      {% include form.html %}
+
       {% include testimonials.html %}
       {% include faqs.html %}
+      
+      {% include shared_scripts.html %}
+      {% include form.html %}
     </section>
+
+
 
   </body>
 
