@@ -1,6 +1,7 @@
 ---
 title: Bastille Agency
 timezone: UTC
+domain: http://localhost:4000
 collections:
   candidate-faqs:
     title: Candidate FAQs
