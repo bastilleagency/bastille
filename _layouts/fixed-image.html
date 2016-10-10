@@ -21,7 +21,13 @@ layout: fixed-image
 
     <section class="{{ layout.layout }}__left">
       <h1 class="{{layout.layout}}__title">
-        {{ page.title | default: 'Bastille Agency' }}
+        {% if page["side image title"] != "" %}
+          {{ page["side image title"] }}
+        {% elsif page.heading != "" %}
+          {{ page.heading }}
+        {% else %}
+          {{ page.title | default: 'Bastille Agency' }}
+        {% endif %}
       </h1>
     </section>
 
@@ -35,6 +41,7 @@ layout: fixed-image
         {% include form.html %}
         {% include testimonials.html %}
         {% include faqs.html %}
+        {% include contact.html %}
       </article>
     </section>
 

@@ -10,7 +10,7 @@ layout: full-width
 
   <style media="screen">
     .{{layout.layout}}__hero {
-      background-image: url('{{ meta.image | default: '/images/hero3.jpg' }}');
+      background-image: url('{{ page["hero image"].path | default: '/images/hero3.jpg' }}');
     }
   </style>
 
@@ -22,15 +22,27 @@ layout: full-width
 
     <section class="{{ layout.layout }}__wrapper">
       <h1 class="{{layout.layout}}__heading">
-        {{ page.title | default: 'Bastille Agency' }}
+        {% if page.heading != "" %}
+          {{ page.heading }}
+        {% else %}
+          {{ page.title | default: 'Bastille Agency' }}
+        {% endif %}
       </h1>
+
+      {% if page.subheading != "" %}
+      <h2 class="{{layout.layout}}__subheading">
+        {{ page.subheading }}
+      </h2>
+      {% endif %}
+
       <div class="{{layout.layout}}__body">
         {{ content }}
       </div>
 
       {% include testimonials.html %}
       {% include faqs.html %}
-      
+      {% include contact.html %}
+
       {% include shared_scripts.html %}
       {% include form.html %}
     </section>

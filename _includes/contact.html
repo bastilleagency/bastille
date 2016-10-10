@@ -1,0 +1,89 @@
+{% if page.partial == 'contact' %}
+
+  <div class="bastille-contact">
+
+  {% if page.address.size > 0 %}
+
+    <div class="bastille-contact__header">
+      <h3>Address</h3>
+    </div>
+
+    {% assign address = page.address %}
+    <div class="row bastille-contact__address">
+      <div class="col s12 offset-s1">
+        {{ address.street }}
+      </div>
+      <div class="col s12 offset-s1">
+        {{ address.unit }}
+      </div>
+      <div class="col s12 offset-s1">
+        {{ address.city }}, {{ address.state }}
+      </div>
+      <div class="col s12 offset-s1">
+        {{ address.zip }}
+      </div>
+    </div>
+
+  {% endif %}
+
+  {% if page.email != "" %}
+
+    <div class="bastille-contact__header">
+      <h3>Email</h3>
+    </div>
+
+    <div class="row bastille-contact__email">
+      <div class="col s12 offset-s1">
+        <i class="material-icons dp48">email</i><a href="mailto:{{ page.email }}" target="_top">{{ page.email }}</a>
+      </div>
+    </div>
+
+  {% endif %}
+
+  {% if page.twitter.size > 0 %}
+
+    <div class="bastille-contact__header">
+      <h3>Twitter</h3>
+    </div>
+
+    <div class="row bastille-contact__social">
+      <div class="col s12 offset-s1">
+        <img src="/images/twitter.png" />
+        <a href="{{ page.twitter.url }}" target="_blank">@{{ page.twitter.handle }}</a>
+      </div>
+    </div>
+
+  {% endif %}
+
+  {% if page.linkedin.size > 0 %}
+
+    <div class="bastille-contact__header">
+      <h3>LinkedIn</h3>
+    </div>
+
+    <div class="row bastille-contact__social">
+      <div class="col s12 offset-s1">
+        <img src="/images/linkedin.png" />
+        <a href="{{ page.linkedin.url }}" target="_blank">{{ page.linkedin.handle }}</a>
+      </div>
+    </div>
+
+  {% endif %}
+
+  {% if page.blog != "" %}
+
+    <div class="bastille-contact__header">
+      <h3>Blog</h3>
+    </div>
+
+    <div class="row bastille-contact__social">
+      <div class="col s12 offset-s1">
+        <a href="{{ page.blog }}" target="_blank">medium</a>
+      </div>
+    </div>
+
+  {% endif %}
+
+  </div>
+
+{% endif %}

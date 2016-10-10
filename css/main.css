@@ -515,6 +515,20 @@ body {
     opacity: 0.9;
   }
 }
+.bastille-contact {
+  font-size: 30px;
+}
+.bastille-contact h3 {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: bold;
+}
+.bastille-contact .row {
+  padding-bottom: 10px;
+}
+.bastille-contact__address .col {
+  border-left: 5px solid #e2e5df;
+}
 .fixed-image {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -690,6 +704,12 @@ body {
 }
 .full-width__heading {
   margin: 5rem 0;
+}
+.full-width__subheading {
+  font-size: 30px;
+  border-top: 5px solid #0a0b09;
+  padding-top: 20px;
+  margin: 20px 0px 20px 0px;
 }
 @-webkit-keyframes full-width__hero {
   from {
