@@ -14,8 +14,6 @@ form:
   type: text
 - label: Phone Number
   type: text
-- label: LinkedIn
-  type: text
 - label: Resume
   type: file
 layout: full-width

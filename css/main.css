@@ -122,6 +122,13 @@ body {
   font-family: "Graphik";
   color: #0a0b09;
 }
+.error-message {
+  text-align: center;
+  color: #ff1d38;
+  font-weight: 600;
+  font-size: 0.86em;
+  margin: 16px 0;
+}
 .hero {
   background: url("/images/hero.jpg") no-repeat center center;
   background-size: cover;

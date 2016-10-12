@@ -1,59 +1,69 @@
 {% if page.form.size > 0 %}
-<form class="animated fadeIn bastille-form col s12 hide-on-load"
-      action="https://getsimpleform.com/messages?form_api_token={{ site.simple_form.api_token }}"
-      method="post" enctype="multipart/form-data">
 
-  {{ site.url }}
-  <input type='hidden' name='redirect_to' value='{{ site.domain }}/thankyou' />
+<div id="form">
 
-  <div class="row">
-  {% for field in page.form %}
+  <form class="animated bastille-form col s12"
+        action="https://getsimpleform.com/messages?form_api_token={{ site.simple_form.api_token }}"
+        method="post" enctype="multipart/form-data"
+        :class="{'hide-on-load': hiddenOnLoad, 'fadeIn': !hidden, 'fadeOut': hidden}"
+        v-on:submit.prevent="validate">
 
-    {% assign form_data = field.label | downcase | replace: " ", "_" %}
+    {{ site.url }}
+    <input type='hidden' name='redirect_to' value='{{ site.domain }}/thankyou' />
 
-    {% if field.type == 'file' %}
-      <div class="file-field input-field col s6">
-        <div class="btn">
-          <span>{{ field.label }}</span>
-          <input type="file" name="{{ field.label }}" >
+    <div class="row">
+    <div class="error-message" v-if="errorMessage">
+      [[errorMessage]]
+    </div>
+    {% for field in page.form %}
+
+      {% assign form_data = field.label | downcase | replace: " ", "_" %}
+
+      {% if field.type == 'file' %}
+        <div class="file-field input-field col m6 s12 offset-m3">
+          <div class="btn">
+            <span>{{ field.label }}</span>
+            <input type="file" name="{{ field.label }}" v-model="inputs.file">
+          </div>
+          <div class="file-path-wrapper">
+            <input class="file-path validate" type="text">
+          </div>
         </div>
-        <div class="file-path-wrapper">
-          <input class="file-path validate" type="text">
+      {% else %}
+        <div class="input-field col s6">
+          <input id="{{ form_data }}" type="{{ field.type }}" name="{{ field.label }}" v-model="inputs.{{ form_data }}" class="validate">
+          <label for="{{ form_data }}">{{ field.label }}</label>
         </div>
-      </div>
-    {% else %}
-      <div class="input-field col s6">
-        <input id="{{ form_data }}" type="{{ field.type }}" name="{{ field.label }}" class="validate">
-        <label for="{{ form_data }}">{{ field.label }}</label>
-      </div>
-    {% endif %}
+      {% endif %}
 
-  {% endfor %}
-  </div>
+    {% endfor %}
+    </div>
 
-  <div class="row col s12 center-align">
-    <button class="btn waves-effect">Submit
-      <i class="material-icons right">send</i>
-    </button>
-  </div>
+    <div class="row col s12 center-align">
+      <button class="btn waves-effect">Submit
+        <i class="material-icons right">send</i>
+      </button>
+    </div>
 
-</form>
+  </form>
 
-{% include loading.html %}
+  {% include loading.html %}
+</div>
+
 
 <!-- TODO: migrate to it's own js file -->
 <script>
   $(document).ready(function() {
-    $("form").removeClass("hide-on-load");
+    // $("form").removeClass("hide-on-load");
 
-    $("button").click(function() {
-      $("form").removeClass("fadeIn");
-      $("form").addClass("fadeOut").delay(500).queue(function(next){
-          // $("html, body").animate({ scrollTop: 100 }, 200);
-          $(".bastille-loading").addClass("active animated fadeIn");
-          next();
-      });
-    });
+    // $("button").click(function() {
+    //   $("form").removeClass("fadeIn");
+    //   $("form").addClass("fadeOut").delay(500).queue(function(next){
+    //       // $("html, body").animate({ scrollTop: 100 }, 200);
+    //       $(".bastille-loading").addClass("active animated fadeIn");
+    //       next();
+    //   });
+    // });
 
   });
 </script>
