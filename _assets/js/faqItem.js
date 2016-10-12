@@ -1,5 +1,5 @@
 var FaqItem = {
-  template: '<div class="faq-item" :class="{\'faq-item--is-active\': isActive}"><div v-on:click.prevent="handleClick" class="faq-item__question">{{ question }}</div><div class="faq-item__answer" id="answer{{ qIndex }}" v-show="isVisible"><slot></slot></div></div>',
+  template: '<div class="faq-item" :class="{\'faq-item--is-active\': isActive}"><div v-on:click.prevent="handleClick" class="faq-item__question">[[ question ]]</div><div class="faq-item__answer" id="answer[[qIndex]]" v-show="isVisible"><slot></slot></div></div>',
   props: ['question', 'qIndex'],
   data: () => {
     return {

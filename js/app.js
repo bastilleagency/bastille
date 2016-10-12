@@ -143,9 +143,9 @@ var anime = require('animejs');
 module.exports = function(callback){
   anime({
       targets: ['#menu'],
-      opacity: 0.8,
+      opacity: 0.95,
       scaleY: 1,
-      translateX: -84,
+      translateX: -108,
       duration: 400,
       loop: false,
       complete: callback
@@ -182,7 +182,7 @@ svg.init({
 
 },{"./faqList":7,"./form":8,"./hamburger":9,"./menu":10,"inline-svg":12,"vue":14}],6:[function(require,module,exports){
 var FaqItem = {
-  template: '<div class="faq-item" :class="{\'faq-item--is-active\': isActive}"><div v-on:click.prevent="handleClick" class="faq-item__question">{{ question }}</div><div class="faq-item__answer" id="answer{{ qIndex }}" v-show="isVisible"><slot></slot></div></div>',
+  template: '<div class="faq-item" :class="{\'faq-item--is-active\': isActive}"><div v-on:click.prevent="handleClick" class="faq-item__question">[[ question ]]</div><div class="faq-item__answer" id="answer[[qIndex]]" v-show="isVisible"><slot></slot></div></div>',
   props: ['question', 'qIndex'],
   data: () => {
     return {
