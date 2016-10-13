@@ -8,7 +8,6 @@
         :class="{'hide-on-load': hiddenOnLoad, 'fadeIn': !hidden, 'fadeOut': hidden}"
         v-on:submit.prevent="validate">
 
-    {{ site.url }}
     <input type='hidden' name='redirect_to' value='{{ site.domain }}/thankyou' />
 
     <div class="row">
@@ -26,7 +25,8 @@
             <input type="file" name="{{ field.label }}" v-model="inputs.file">
           </div>
           <div class="file-path-wrapper">
-            <input class="file-path validate" type="text">
+            <input id="file-path" class="file-path validate" type="text">
+            <label for="file-path">Optional</label>
           </div>
         </div>
       {% else %}

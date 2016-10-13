@@ -1,8 +1,8 @@
 ---
-title: Candidate Testimonials
+title: Testimonials
 date: 2016-10-04 01:44:00 Z
 layout: full-width
-heading: Candidate Testimonials
+heading: Testimonials
 hero image:
   path: "/uploads/candidate-testimonials.jpeg"
 testimonials:
@@ -12,4 +12,3 @@ testimonials:
     salary increase . Overall, the experience definitely exceeded my expectations.
   source: Kendrick Caranicas, Software Engineer, PhotoShelter
 ---
-

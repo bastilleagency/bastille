@@ -1,8 +1,8 @@
 ---
-title: Candidate FAQs
+title: FAQs
 date: 2016-10-04 01:21:00 Z
 layout: full-width
-heading: Candidate FAQs
+heading: FAQs
 hero image:
   path: "/uploads/candidate-faqs.jpeg"
 FAQs:
@@ -44,4 +44,3 @@ FAQs:
 - question: Who grades the assignment?
   answer: Our technical advisor, Karthik Senthil, currently grades the assessments.
 ---
-

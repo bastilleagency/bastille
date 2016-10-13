@@ -1,7 +1,7 @@
 ---
-title: Client Testimonials
+title: Testimonials
 date: 2016-10-04 01:43:00 Z
-heading: Client Testimonials
+heading: Testimonials
 layout: full-width
 hero image:
   path: "/uploads/client-testimonials.jpeg"
@@ -11,4 +11,3 @@ testimonials:
     with us to sign hard-to-find technical talent.
   source: Oisin Hanrahan, Co-founder and CEO at Handy
 ---
-

@@ -3,8 +3,7 @@ title: Candidate
 date: 2016-09-28 00:37:00 Z
 hero image:
   path: "/uploads/candidate.jpeg"
-heading: Candidate
-subheading: Show off your coding skills beyond your resume.
+heading: Show off your coding skills beyond your resume.
 form:
 - label: First Name
   type: text
