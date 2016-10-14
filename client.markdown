@@ -2,6 +2,15 @@
 title: Client
 date: 2016-09-28 00:37:00 Z
 heading: Identify awesome developers before investing time in interviews.
+form:
+- label: Your Name
+  type: text
+- label: Company
+  type: text
+- label: Phone Number
+  type: text
+- label: Email
+  type: text
 layout: full-width
 ---
 

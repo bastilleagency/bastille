@@ -39,16 +39,16 @@ layout: full-width
         {{ content }}
       </div>
 
-      {% if page.title == 'Client' %}
-        {% include logos.html %}
-      {% endif %}
-
       {% include testimonials.html %}
       {% include faqs.html %}
       {% include contact.html %}
 
       {% include shared_scripts.html %}
       {% include form.html %}
+
+      {% if page.title == 'Client' %}
+        {% include logos.html %}
+      {% endif %}
     </section>
 
 

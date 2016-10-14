@@ -5,17 +5,29 @@
   {% if page.address.size > 0 %}
 
 
-  {% assign address = page.address %}
+    {% assign address = page.address %}
+
+      <div class="bastille-contact__header">
+        <h3>Address</h3>
+      </div>
+
+      <div class="bastille-contact__body">
+        {{ address.street }}<br />
+        {{ address.unit }}<br />
+        {{ address.city }}, {{ address.state }}<br />
+        {{ address.zip }}
+      </div>
+
+  {% endif %}
+
+  {% if page.phone != "" %}
 
     <div class="bastille-contact__header">
-      <h3>Address</h3>
+      <h3>Phone</h3>
     </div>
 
     <div class="bastille-contact__body">
-      {{ address.street }}<br />
-      {{ address.unit }}<br />
-      {{ address.city }}, {{ address.state }}<br />
-      {{ address.zip }}
+      <a href="tel:{{ page.phone }}" target="_top">{{ page.phone }}</a>
     </div>
 
   {% endif %}

@@ -1,14 +1,23 @@
 .logos
-  grid('row', 'center', 'center')
+  // grid('row', 'center', 'center')
   margin-top 60px
-  &__logo
+  
+  .slick-track
+    display flex
+    align-items center
+    
+    .slick-slide
+      margin 0 10px
+    
+    .slick-current
+      img
+        filter none
+
+  img
     width 100%
     max-width 120px
-    padding 10px
-    img
-      width 100%
-      height auto
-      filter grayscale(100%)
-      transition filter 200ms ease-in-out
-      &:hover
-        filter none
+    height auto
+    filter grayscale(100%)
+    transition filter 200ms ease-in-out
+    &:hover
+      filter none
