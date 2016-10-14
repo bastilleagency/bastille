@@ -9,9 +9,9 @@ form:
   type: text
 - label: Your Email
   type: text
-- label: Candidate's Name
+- label: Referral Name
   type: text
-- label: Candidate's Email
+- label: Referral Email
   type: text
 layout: fixed-image
 ---
