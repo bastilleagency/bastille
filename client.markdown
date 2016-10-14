@@ -7,9 +7,9 @@ form:
   type: text
 - label: Company
   type: text
-- label: Phone Number
-  type: text
 - label: Email
+  type: text
+- label: Phone Number
   type: text
 layout: full-width
 ---
