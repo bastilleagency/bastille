@@ -7,8 +7,15 @@
   background white
   overflow hidden
   z-index 10
+  +below($tablet)
+    width rem-calc(40)
+    height rem-calc(40)
 
   &__wrapper
     absolute right 0 top rem-calc(-20px)
     width rem-calc(74)
     height rem-calc(74)
+    +below($tablet)
+      width rem-calc(40)
+      height rem-calc(40)
+      top 0 

@@ -6,7 +6,15 @@
     text-transform uppercase
     font-weight bold
     font-size rem-calc(15)
+    +below($tablet)
+      cell(1,1)
+      margin-left 0
+      margin-right 0
   &__body
     cell(5,7,g:0)
     text-align left
     margin-bottom 20px
+    +below($tablet)
+      cell(1,1)
+      margin-left 0
+      margin-right 0

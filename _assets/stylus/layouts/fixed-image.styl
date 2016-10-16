@@ -11,6 +11,10 @@
     position relative
     background-size cover
     animation fixed-image__left 1600ms ease-out forwards
+    +below($tablet)
+      cell(1,1,g:0)
+      height 200px
+      overflow visible
 
   &__right
     cell(3,5,g:0)
@@ -18,6 +22,9 @@
     overflow-y scroll
     height 100vh
     padding-bottom rem-calc(100px)
+    +below($tablet)
+      cell(1,1)
+      overflow visible
 
   &__title
     absolute bottom 0 right 0
@@ -28,10 +35,16 @@
     transform-origin right bottom
     opacity 0
     animation fixed-image__title 1000ms ease-out forwards
+    +below($tablet)
+      display none
 
   &__content
     max-width rem-calc(600px)
     margin-left rem-calc(180px)
+    +below($desktop)
+      max-width rem-calc(420px)
+      margin-left auto
+      margin-right auto
 
     a
       color $black
@@ -44,6 +57,9 @@
     font-size rem-calc(58)
     font-weight bold
     margin rem-calc(140px) 0
+    +below($tablet)
+      font-size rem-calc(36)
+      margin rem-calc(30px) 0
 
   &__subheading
     border-top 4px solid $black
@@ -51,6 +67,9 @@
     font-size rem-calc(46)
     font-weight bold
     margin-bottom rem-calc(54)
+    +below($tablet)
+      font-size rem-calc(28)
+      margin rem-calc(30px) 0
 
   &__body
     opacity 0

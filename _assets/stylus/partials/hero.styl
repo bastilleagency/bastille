@@ -7,9 +7,19 @@
     height 100%
     center($containerWidth)
     grid('row','center','end')
+    +below($desktop)
+      grid('row', 'center', 'center')
+    +below($tablet)
+      grid('row', 'top', 'center')
 
   &__content
     cell(1,2)
+    +below($tablet)
+      cell(2,3)
+      margin-top 150px!important
+    +below(500px)
+      cell(1,1)
+      padding 10px
 
   &__heading
     font-size rem-calc(78)
@@ -17,11 +27,19 @@
     font-weight bold
     em
       color $blue
+    +below($desktop)
+      font-size rem-calc(50)
+    +below($tablet)
+      font-size rem-calc(40)
 
   &__subheading
     font-size rem-calc(18)
     line-height 1.6
     width 75%
+    +below($desktop)
+      width 100%
+    +below($tablet)
+      font-size rem-calc(16)
 
   &__button
     display inline-block
@@ -33,3 +51,8 @@
     margin rem-calc(18) rem-calc(6)
     &:first-of-type
       margin-left 0
+    +below($desktop)
+      width 100%
+      margin 10px 0 0
+    +below($tablet)
+      font-size rem-calc(18)

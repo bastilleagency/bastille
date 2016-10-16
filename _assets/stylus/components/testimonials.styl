@@ -6,6 +6,10 @@
     position relative
     width 80%
     margin rem-calc(20) auto
+    +below($tablet)
+      width 100%
+      &:before
+        content none
     &:before
       font-family Georgia, 'Times New Roman', serif
       content "“"

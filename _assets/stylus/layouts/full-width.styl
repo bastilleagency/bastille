@@ -11,6 +11,13 @@
     center($sectionWrapperWidth, $containerPadding)
     transform translateY(-240px)
     padding-bottom rem-calc(80px)
+    overflow hidden
+    +below($desktop)
+      center(rem-calc(800px))
+    +below($tablet)
+      max-width none
+      padding-left 20px
+      padding-right 20px
 
   &__heading
     @extend .fixed-image__heading

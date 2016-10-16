@@ -30,7 +30,7 @@
           </div>
         </div>
       {% else %}
-        <div class="input-field col s6">
+        <div class="input-field col s12 m6">
           <input id="{{ form_data }}" type="{{ field.type }}" name="{{ field.label }}" v-model="inputs.{{ form_data }}" class="validate">
           <label for="{{ form_data }}">{{ field.label }}</label>
         </div>
