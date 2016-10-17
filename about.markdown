@@ -1,7 +1,7 @@
 ---
-title: About
+title: Why?
 date: 2016-09-28 00:39:00 Z
-side image title: About
+side image title: Why?
 heading: All the hustle of an agency.
 subheading: None of the sleaze.
 layout: fixed-image
