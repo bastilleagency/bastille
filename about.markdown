@@ -1,5 +1,5 @@
 ---
-title: Why?
+title: About
 date: 2016-09-28 00:39:00 Z
 side image title: About
 heading: All the hustle of an agency.
