@@ -13,7 +13,7 @@ var form = {
     errorMessage: ''
   },
   methods: {
-    validate: function(){
+    validate: function(event){
       this.errorMessage = '';
       if(this.validateInputs()){
         this.hidden = true;
