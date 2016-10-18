@@ -19,6 +19,9 @@ FAQs:
     it will yield, if anything, a marginal value.  Because we look for a specific
     set of signals to assess someone’s technical caliber, we firmly believe either
     the candidate innately possesses them or he/she doesn’t.
+- question: How do you reduce bias in your evaluation process?
+  answer: The evaluations are reviewed blind, which means the reviewer only sees the
+    code. The candidate's name and any other information is kept hidden.
 - question: Who should I contact?
   answer: Please reach out to Georges Janin at georges@bastilleagency.com with any
     questions or inquiries.
