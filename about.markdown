@@ -7,12 +7,12 @@ subheading: We find them.
 layout: fixed-image
 ---
 
-Done right, recruiting is one of the most rewarding professions. Rarely do you have the chance to affect somebody’s life in the way that you can when you help them find a new job.
+Hiring good engineers is hard. To help make this process easier for both companies and candidates, third party recruiting agencies have served at the top of the funnel to aid with discovery and filtering. 
 
-I didn’t plan on being a recruiter growing up (nobody does), but I fell into it after some hints from family and friends. Quite frankly, I was on the fence about it: I had worked with recruiters before and had no interest in joining that sort of operation.
+Recruiters primarily vet candidates based on their education and experience. The result is a very small, homogeneous group of people getting the bulk of attention, with the rest getting passed over. 
 
-I joined a classic contingency agency, where I learned how to hustle, understand candidates, and make deals happen. I rose to the top 3 billers in the agency’s history. Yet I also saw the mediocrity of it all: spray-and-pray emails, sleazy closing techniques, and general bad behavior on both sides.
+As technologies evolve at a dizzying rate, companies view skills, not pedigree, as the best predictor of success. As a result, a resume is no longer the best vehicle to fully encapsulate someone’s technical abilities.
 
-Many companies needed help: they needed a systematic, proactive approach to finding talent, without all the sleaze that came with it. But they were not really finding it, as far as I could tell.
+At Bastille, we've been frustrated as candidates, clients, and recruiters. So we decided to do something about it. Our assessment allows anybody to shine, regardless of background. 
 
-Bastille was born out of that frustration. And I hope it will usher in something new.
+Instead of chasing after the same tiny pool of candidates who look good "on paper", we hope to bring a diverse set of skilled individuals to the hiring table. 
