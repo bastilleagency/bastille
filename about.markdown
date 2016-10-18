@@ -2,8 +2,8 @@
 title: About
 date: 2016-09-28 00:39:00 Z
 side image title: About
-heading: All the hustle of an agency.
-subheading: None of the sleaze.
+heading: Great developers are more than just pedigree.
+subheading: We find them.
 layout: fixed-image
 ---
 
