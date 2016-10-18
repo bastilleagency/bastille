@@ -3,9 +3,23 @@ var form = {
     hidden: false,
     hiddenOnLoad: true,
     submitted: false,
+    page: '',
+    candidate_inputs: {
+      first_name: '',
+      last_name: '',
+      email: '',
+      phone_number: ''
+    },
+    client_inputs: {
+      your_name: '',
+      company: '',
+      email: '',
+      phone_number: ''
+    },
     inputs: {
       first_name: '',
       last_name: '',
+      your_name: '',
       email: '',
       phone_number: '',
       file: ''
@@ -29,10 +43,13 @@ var form = {
     validateInputs: function(){
       var validated = 0;
       var inputs    = 0;
-      for(var field in this.inputs){
+      var expected_inputs = (this.page == 'Client') ? this.client_inputs : this.candidate_inputs;
+
+      for(var field in expected_inputs){
         inputs += 1;
         validated += (!!this.inputs[field].length) ? 1 : 0;
       }
+
       return validated == inputs;
     }
   },
