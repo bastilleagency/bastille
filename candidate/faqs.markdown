@@ -1,7 +1,6 @@
 ---
 title: FAQs
 date: 2016-10-04 01:21:00 Z
-layout: full-width
 heading: FAQs
 hero image:
   path: "/uploads/candidate-faqs.jpeg"
@@ -39,9 +38,10 @@ FAQs:
   answer: We advise you to continue the discussion on the Gist (or over email) with
     our technical advisor, Karthik.
 - question: Will I get fast tracked at companies by taking this?
-  answer: Yes, in fact, a number of the companies we work with have incorporated our
+  answer: It depends on the company, however, several of them have incorporated our
     assessment into their own interview/technical screening process.
 - question: Who grades the assignment?
   answer: Our technical advisor, Karthik Senthil, currently grades the assessments.
+layout: full-width
 ---
 
