@@ -1,7 +1,6 @@
 ---
 title: Contact Us
 date: 2016-10-04 01:46:00 Z
-layout: fixed-image
 partial: contact
 hero image:
   path: "/uploads/contact.jpeg"
@@ -14,7 +13,6 @@ address:
   city: New York
   state: NY
   zip: 10014
-phone: 1-877-310-1789
 email: bonjour@bastilleagency.com
 twitter:
   handle: bastilleagency
@@ -23,5 +21,6 @@ linkedin:
   handle: bastilleagency
   url: https://www.linkedin.com/company/bastille-agency
 blog: https://medium.com/the-bastille
+layout: fixed-image
 ---
 
