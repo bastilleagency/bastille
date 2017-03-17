@@ -13,7 +13,6 @@ address:
   city: New York
   state: NY
   zip: 10014
-phone: 
 email: bonjour@bastilleagency.com
 twitter:
   handle: bastilleagency
